@@ -7,214 +7,209 @@
   <title>Kevin Messina | iOS Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page-shell" id="top">
-    <header class="profile-header">
-      <img class="profile-image" src="assets/kevin-profile.png" alt="Kevin Messina">
-      <div class="profile-copy">
-        <p class="eyebrow">iOS Developer</p>
-        <h1>Kevin Messina</h1>
-        <p class="role">Senior iOS Developer | Swift, SwiftUI, Objective-C</p>
-        <p class="location">Huntington, NY & Jacksonville, FL</p>
-
-        <nav class="social-links" aria-label="Profile links">
-          <a href="mailto:kmessina@creativeapps.us">Email</a>
-          <a href="https://www.linkedin.com/in/kmessina-cas">LinkedIn</a>
-          <a href="https://github.com/KMessina1">GitHub</a>
-          <a href="https://creativeapps.us/app-portfolio">Portfolio</a>
-          <a href="assets/Kevin-Messina-Resume.pdf">Resume</a>
-        </nav>
-      </div>
-    </header>
-
-    <nav class="section-nav" aria-label="Page sections">
-      <a href="#welcome">Welcome</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Kevin Messina home">
+      <span class="brand-mark">KM</span>
+      <span>Kevin Messina</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
       <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
+      <a href="#open-source">Open Source</a>
       <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
     </nav>
+  </header>
 
-    <section class="content-section" id="welcome">
-      <h2>Welcome</h2>
-      <p>
-        My name is Kevin Messina, and I am a Senior iOS Developer with 15+ years of experience architecting,
-        developing, and deploying production mobile applications across consumer, enterprise, and B2B environments.
-      </p>
-      <p>
-        I specialize in native Apple platform development using Swift, SwiftUI, Objective-C, UIKit, and modern Apple
-        frameworks. My work focuses on clean architecture, maintainable code, RESTful API integration, cloud services,
-        CI/CD release workflows, and intuitive user experiences.
-      </p>
-      <p>
-        Through Creative App Solutions and DVMagic Studios, I have partnered with global teams and brands to modernize
-        legacy applications, accelerate product delivery, and build data-driven mobile solutions that support business growth.
-      </p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">iOS developer • founder • consultant</p>
+        <h1>Kevin Messina, Senior iOS Developer building apps, developer tools and digital products.</h1>
+        <p class="hero-summary">
+          I’m Kevin Messina, a US-based Senior iOS Developer focused on Swift, SwiftUI,
+          Objective-C, clean architecture and products that solve real business problems.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View projects</a>
+          <a class="button button-secondary" href="https://github.com/KMessina1">GitHub</a>
+        </div>
+      </div>
+
+      <aside class="journey-card" aria-label="Current journey">
+        <img class="avatar" src="assets/kevin-profile.png" alt="Kevin Messina">
+        <h2>Current Journey</h2>
+        <ul>
+          <li><span>🚀</span> Building Ballistic Tracker</li>
+          <li><span>🧰</span> Releasing Swift developer tools</li>
+          <li><span>📱</span> Modernizing legacy iOS apps</li>
+          <li><span>🌎</span> Shipping multilingual App Store products</li>
+        </ul>
+      </aside>
     </section>
 
-    <section class="content-section" id="projects">
-      <h2>Personal & Professional Projects</h2>
-      <p>
-        A selection of iOS, enterprise, analytics, and full-stack products built across consulting, App Store, and client environments.
-      </p>
+    <section class="section intro" id="about">
+      <div class="section-label">Welcome</div>
+      <h2>Native Apple platform engineering with full product delivery experience.</h2>
+      <div class="text-stack">
+        <p>
+          Senior iOS Developer with 15+ years of experience architecting, developing and deploying
+          high-performance mobile applications across consumer, enterprise and B2B environments.
+        </p>
+        <p>
+          I specialize in Swift, SwiftUI, Objective-C, UIKit, RESTful APIs, cloud services, CI/CD pipelines
+          and scalable backend systems while delivering intuitive user experiences and commercially successful
+          App Store products.
+        </p>
+      </div>
+    </section>
 
-      <div class="project-list">
-        <article class="project-item">
-          <span>SwiftUI / Analytics</span>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <div class="section-label">Projects</div>
+        <h2>Selected iOS, enterprise and analytics work.</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="project-card">
+          <p class="card-label">SwiftUI / Analytics</p>
           <h3>Ballistic Tracker</h3>
-          <p>Built SwiftUI and UIKit interfaces with physics-based analytics, visualization, real-time APIs, location data, and SQL reporting exports.</p>
+          <p>Built SwiftUI/UIKit interfaces with physics-based analytics, visualization, real-time APIs, location data and SQL reporting exports.</p>
         </article>
-        <article class="project-item">
-          <span>Commerce Platform</span>
+        <article class="project-card">
+          <p class="card-label">Commerce Platform</p>
           <h3>SquareFrame</h3>
-          <p>Developed scalable Swift architecture, improved retention by 35%, increased revenue by 51%, and built PHP, MySQL, and JSON backend services.</p>
+          <p>Developed scalable Swift architecture, improved retention by 35%, increased revenue by 51%, and built PHP, MySQL and JSON backend services.</p>
         </article>
-        <article class="project-item">
-          <span>Enterprise Inventory</span>
+        <article class="project-card">
+          <p class="card-label">Enterprise Inventory</p>
           <h3>VendManage</h3>
-          <p>Created an Apple Watch inventory system, SQL-driven analytics dashboards, GIS routing, and logistics workflows for restock efficiency.</p>
+          <p>Created an Apple Watch inventory system, SQL-driven dashboards, GIS routing and logistics workflows for restock efficiency.</p>
         </article>
-        <article class="project-item">
-          <span>Enterprise Expense</span>
+        <article class="project-card">
+          <p class="card-label">Enterprise Expense</p>
           <h3>Expense 2 Go</h3>
           <p>Built secure travel and expense workflows for 10K+ global users, reducing reimbursement time by 80% with VisionKit and automated AP systems.</p>
         </article>
-        <article class="project-item">
-          <span>Sports Analytics</span>
-          <h3>My Footy Stats</h3>
-          <p>Built AFL sports analytics apps that reached the #2 App Store ranking in Australia and modernized legacy interfaces with SwiftUI.</p>
+      </div>
+    </section>
+
+    <section class="section" id="open-source">
+      <div class="section-heading">
+        <div class="section-label">Open Source</div>
+        <h2>Reusable libraries, tools and Apple platform experiments.</h2>
+      </div>
+
+      <div class="card-grid compact">
+        <article class="project-card">
+          <p class="card-label">Swift Libraries</p>
+          <h3>CAS iOS Functions Library</h3>
+          <p>Shared Swift utilities and reusable iOS development helpers for production app workflows.</p>
         </article>
-        <article class="project-item">
-          <span>Reporting Systems</span>
-          <h3>Stats Tracker</h3>
-          <p>Delivered scheduling, performance tracking, CoreLocation and weather-based reporting, PDFKit output, and iOS sharing workflows.</p>
+        <article class="project-card">
+          <p class="card-label">Developer Tools</p>
+          <h3>CAS Swift Libraries</h3>
+          <p>Reusable code patterns for Swift development, interface polish and common application behavior.</p>
         </article>
       </div>
     </section>
 
-    <section class="content-section" id="skills">
-      <h2>Skills</h2>
+    <section class="section skills-section">
+      <div class="section-heading">
+        <div class="section-label">Skills</div>
+        <h2>Apple platforms, backend integration and delivery tooling.</h2>
+      </div>
+
       <div class="skills-grid">
-        <article>
-          <h3>Apple Platforms</h3>
-          <ul>
-            <li>Swift</li>
-            <li>SwiftUI</li>
-            <li>Objective-C</li>
-            <li>UIKit</li>
-            <li>Core Data</li>
-            <li>SwiftData</li>
-            <li>CloudKit</li>
-            <li>StoreKit</li>
-            <li>MapKit</li>
-            <li>VisionKit</li>
-            <li>PDFKit</li>
-            <li>Combine</li>
-          </ul>
+        <article class="skill-card">
+          <h3>Frontend</h3>
+          <div class="pill-list">
+            <span>Swift</span>
+            <span>SwiftUI</span>
+            <span>Objective-C</span>
+            <span>UIKit</span>
+            <span>Core Data</span>
+            <span>SwiftData</span>
+            <span>CloudKit</span>
+            <span>StoreKit</span>
+            <span>MapKit</span>
+          </div>
         </article>
-        <article>
+        <article class="skill-card">
           <h3>Backend</h3>
-          <ul>
-            <li>RESTful APIs</li>
-            <li>SQL</li>
-            <li>PHP</li>
-            <li>JSON</li>
-            <li>MySQL</li>
-            <li>GRDB</li>
-            <li>Stripe</li>
-            <li>TaxJar</li>
-            <li>MailChimp</li>
-            <li>Shippo</li>
-          </ul>
+          <div class="pill-list">
+            <span>RESTful APIs</span>
+            <span>SQL</span>
+            <span>PHP</span>
+            <span>JSON</span>
+            <span>MySQL</span>
+            <span>GRDB</span>
+            <span>Stripe</span>
+            <span>Shippo</span>
+          </div>
         </article>
-        <article>
-          <h3>Tooling & Delivery</h3>
-          <ul>
-            <li>GitHub</li>
-            <li>GitHub Actions</li>
-            <li>CI/CD</li>
-            <li>TestFlight</li>
-            <li>Xcode</li>
-            <li>Swift Package Manager</li>
-            <li>Unit Testing</li>
-            <li>UI Testing</li>
-            <li>Agile</li>
-            <li>Scrum</li>
-          </ul>
+        <article class="skill-card">
+          <h3>Tooling & Other</h3>
+          <div class="pill-list">
+            <span>GitHub</span>
+            <span>GitHub Actions</span>
+            <span>CI/CD</span>
+            <span>TestFlight</span>
+            <span>Xcode</span>
+            <span>SPM</span>
+            <span>Unit Testing</span>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="content-section" id="experience">
-      <h2>Work Experience</h2>
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <div class="section-label">Experience</div>
+        <h2>Work Experience</h2>
+      </div>
 
       <div class="timeline">
-        <article>
-          <p class="date-range">2021 - 2026</p>
+        <article class="experience-card">
+          <p class="date">2021 - 2026</p>
           <h3>iOS Developer</h3>
           <h4>Creative App Solutions, LLC</h4>
-          <p class="location">Huntington, NY & Jacksonville, FL</p>
+          <p class="place">Huntington, NY & Jacksonville, FL</p>
           <p>
-            Led cross-functional teams of up to 60 while delivering high-quality applications for global clients across
-            North America, Europe, and Australia. Built and deployed iOS apps, consulted for brands including Disney
-            Interactive, managed GitHub Actions and TestFlight release pipelines, and delivered localization across 50+ languages.
+            Led cross-functional teams of up to 60, delivered commercial App Store products, consulted for global brands
+            including Disney Interactive, and managed CI/CD release workflows through GitHub Actions and TestFlight.
           </p>
         </article>
 
-        <article>
-          <p class="date-range">2010 - 2021</p>
+        <article class="experience-card">
+          <p class="date">2010 - 2021</p>
           <h3>iOS Developer</h3>
           <h4>DVMagic Studios, Inc.</h4>
-          <p class="location">Remote</p>
+          <p class="place">Remote</p>
           <p>
-            Led full software development lifecycles for consumer and enterprise mobile applications distributed through
-            the App Store and private enterprise channels. Migrated Objective-C applications to Swift and SwiftUI,
-            modernized architecture, and integrated SQLite, SwiftData, GRDB, and MySQL RESTful APIs.
+            Led SDLC for consumer and enterprise mobile applications, migrated Objective-C apps to Swift and SwiftUI,
+            modernized architecture and integrated SQLite, SwiftData, GRDB and MySQL RESTful APIs.
           </p>
         </article>
       </div>
     </section>
 
-    <section class="content-section" id="education">
-      <h2>Education</h2>
-      <div class="timeline">
-        <article>
-          <h3>Bachelor of Science in Computer Science</h3>
-          <h4>Grumman Data Systems Institute</h4>
-          <p class="location">Woodbury, NY</p>
-        </article>
+    <section class="section contact-section">
+      <div class="section-heading">
+        <div class="section-label">Contact Me</div>
+        <h2>Let’s build the next iOS product.</h2>
+      </div>
+
+      <div class="contact-card">
+        <a href="mailto:kmessina@creativeapps.us">kmessina@creativeapps.us</a>
+        <a href="tel:+16319949123">(631) 994-9123</a>
+        <a href="https://www.linkedin.com/in/kmessina-cas">LinkedIn</a>
+        <a href="assets/Kevin-Messina-Resume.pdf">Resume</a>
       </div>
     </section>
-
-    <section class="content-section contact-section" id="contact">
-      <h2>Contact Me</h2>
-      <dl>
-        <div>
-          <dt>Email</dt>
-          <dd><a href="mailto:kmessina@creativeapps.us">kmessina@creativeapps.us</a></dd>
-        </div>
-        <div>
-          <dt>Phone</dt>
-          <dd><a href="tel:+16319949123">(631) 994-9123</a></dd>
-        </div>
-        <div>
-          <dt>LinkedIn</dt>
-          <dd><a href="https://www.linkedin.com/in/kmessina-cas">linkedin.com/in/kmessina-cas</a></dd>
-        </div>
-        <div>
-          <dt>GitHub</dt>
-          <dd><a href="https://github.com/KMessina1">github.com/KMessina1</a></dd>
-        </div>
-      </dl>
-    </section>
-
-    <footer>
-      <p>Copyright © 2026 Kevin Messina. All rights reserved.</p>
-    </footer>
   </main>
 </body>
 </html>
