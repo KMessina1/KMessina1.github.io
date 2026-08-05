@@ -72,7 +72,7 @@ img { max-width: 100%; display: block; }
 .nav a:hover { color: var(--text); }
 
 .section { max-width: var(--max); margin: 0 auto; padding: 92px 24px; }
-.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) 420px; gap: 46px; align-items: center; min-height: calc(100vh - 88px); padding-top: 52px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) 420px; gap: 46px; align-items: center; min-height: calc(100vh - 88px); padding-top: 52px; padding-bottom: 36px; }
 .eyebrow { color: var(--cyan); font-weight: 700; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; margin-bottom: 18px; }
 h1, h2, h3 { margin: 0; letter-spacing: -0.055em; line-height: 1.02; }
 h1 { font-size: clamp(44px, 7vw, 82px); max-width: 880px; }
@@ -83,6 +83,8 @@ h3 { font-size: 24px; letter-spacing: -0.035em; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 18px; border-radius: 999px; font-weight: 700; border: 1px solid var(--line); transition: transform .2s ease, background .2s ease, border-color .2s ease; }
 .button-icon { width: 16px; height: 16px; flex: 0 0 auto; font-size: 16px; object-fit: contain; }
 .button-icon-cas { width: 26px; border-radius: 2px; }
+.button-icon-linkedin { color: #0a66c2; }
+.button-icon-upwork { color: #14a800; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #06101c; border-color: transparent; }
 .button-secondary { background: rgba(255,255,255,.08); color: var(--text); }
@@ -96,7 +98,7 @@ h3 { font-size: 24px; letter-spacing: -0.035em; }
 .stat-card-icon { width: 22px; height: 22px; flex: 0 0 auto; object-fit: contain; }
 .hero-stats span { color: var(--muted); font-size: 13px; }
 
-.hero-card, .value-card, .project-card, .oss-card, .article-card, .contact-card, .interest-grid article, .timeline {
+.hero-card, .value-card, .project-card, .oss-card, .article-card, .contact-card, .interest-grid article, .timeline, .skills-panel {
   border: 1px solid var(--line);
   background: linear-gradient(180deg, rgba(255,255,255,.1), rgba(255,255,255,.045));
   box-shadow: var(--shadow);
@@ -110,12 +112,22 @@ h3 { font-size: 24px; letter-spacing: -0.035em; }
 .focus-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; position: relative; }
 .focus-list li { display: flex; gap: 12px; align-items: center; padding: 13px 14px; border-radius: 16px; background: rgba(255,255,255,.06); color: var(--muted); }
 
-.intro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-top: 18px; }
+.intro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-top: 0; padding-bottom: 36px; }
 .mindsets-title { grid-column: 1 / -1; }
 .mindsets-title .eyebrow { margin-bottom: 0; }
 .value-card { padding: 28px; }
 .value-card .icon { display: inline-flex; color: var(--green); font-weight: 800; margin-bottom: 52px; }
 .value-card h2 { font-size: 25px; margin-bottom: 14px; }
+
+.technical-skills-section { padding-top: 0; padding-bottom: 36px; }
+.technical-skills-title { margin-bottom: 18px; }
+.technical-skills-title .eyebrow { margin-bottom: 0; }
+.skills-panel { padding: 18px; }
+.skillset-item { display: grid; grid-template-columns: 210px 1fr; gap: 24px; align-items: start; padding: 28px; border-bottom: 1px solid var(--line); }
+.skillset-item:last-child { border-bottom: 0; }
+.skillset-item h3 { color: var(--cyan); font-size: 18px; line-height: 1.25; letter-spacing: -0.02em; }
+.skillset-item .tag-row { margin-top: 0; }
+#projects { padding-top: 0; }
 
 .section-heading { margin-bottom: 34px; }
 .section-heading p:last-child { max-width: 720px; margin-top: 16px; font-size: 18px; }
@@ -189,14 +201,17 @@ h3 { font-size: 24px; letter-spacing: -0.035em; }
   .hero-stats .stat-card { width: auto; }
   .intro-grid, .project-grid, .oss-grid, .article-grid { grid-template-columns: 1fr; }
   .project-large { grid-column: span 1; }
-  .timeline-item { grid-template-columns: 1fr; }
+  .timeline-item, .skillset-item { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
   .site-header { padding: 18px; }
   .nav { font-size: 13px; }
   .section { padding: 64px 18px; }
-  .hero { padding-top: 30px; }
+  .hero { padding-top: 30px; padding-bottom: 36px; }
+  .intro-grid { padding-top: 0; padding-bottom: 36px; }
+  .technical-skills-section { padding-top: 0; padding-bottom: 36px; }
+  #projects { padding-top: 0; }
   h1 { font-size: 42px; }
   .hero-lede { font-size: 18px; }
   .hero-stats { grid-template-columns: 1fr; }
